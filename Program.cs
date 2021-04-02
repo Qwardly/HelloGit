@@ -19,7 +19,14 @@ namespace HelloGit
 
         private static void BubbleSort(IList<int> array)
         {
-            // TODO Напиши сортировку пузырьком. Запусти проект, и проверь, что Main не падает.
+            for (int i = 0; i < array.Count; i++)
+                for (int j = 0; j < array.Count - i - 1; j++)
+                    if (array[j] > array[j + 1])
+                    {
+                        int temp = array[j];
+                        array[j] = array[j + 1];
+                        array[j + 1] = temp;
+                    }
         }
     }
 }
