@@ -23,9 +23,9 @@ namespace HelloGit
                 for (int j = 0; j < array.Count - i - 1; j++)
                     if (array[j] > array[j + 1])
                     {
-                        int temp = array[j];
+                        int t = array[j];
                         array[j] = array[j + 1];
-                        array[j + 1] = temp;
+                        array[j + 1] = t;
                     }
         }
     }
